@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos — NovaBMX</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/productos.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">N</div>
+        <span class="navbar-name">NOVA<span>BMX</span></span>
+      </a>
+      <nav class="navbar-links">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="navbar-icons">
+        <button id="search-btn" aria-label="Buscar" class="search-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <a href="carrito.html"><button aria-label="Carrito">🛒</button></a>
+      </div>
+
+      <!-- Modal de búsqueda -->
+      <div id="search-modal" class="search-modal" style="display: none;">
+        <div class="search-modal-content">
+          <div class="search-header">
+            <input type="text" id="search-input" placeholder="Buscar productos...">
+            <button id="close-search" class="close-search-btn">✕</button>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Catálogo</span>
+      <h1 id="page-title">Piezas BMX</h1>
+      <p id="page-subtitle"></p>
+    </div>
+  </section>
+
+  <div id="main-grid"></div>
+
+  <footer class="footer">
+    <div class="footer-bottom">© 2026 NovaBMX</div>
+  </footer>
+
+  <script src="../data/catalog.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/productos.js"></script>
+</body>
+</html>

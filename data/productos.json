@@ -1,0 +1,202 @@
+{
+  "piezas": [
+    {
+      "id": 1,
+      "nombre": "Cuadros",
+      "precio": 45000,
+      "imagen": "../assets/images/productos/cuadro1.jpg",
+      "color": "#ff6b00"
+    },
+    {
+      "id": 2,
+      "nombre": "Volantes",
+      "precio": 12000,
+      "imagen": "../assets/images/productos/volante1.jpg",
+      "color": "#4fc3f7"
+    },
+    {
+      "id": 3,
+      "nombre": "Stems",
+      "precio": 8000,
+      "imagen": "../assets/images/productos/stem1.jpg",
+      "color": "#4fc3f7"
+    },
+    {
+      "id": 4,
+      "nombre": "Horquillas",
+      "precio": 18000,
+      "imagen": "../assets/images/productos/horquilla1.jpg",
+      "color": "#4fc3f7"
+    },
+    {
+      "id": 5,
+      "nombre": "Rueda Delantera",
+      "categoria": "Rodado",
+      "precio": 16000,
+      "imagen": "../assets/images/productos/rueda-delantera.jpg",
+      "color": "#39d353",
+      "emoji": "⭕",
+      "descripcion": "Aro de 20\". Viene en distintos anchos: 1.75\", 2.0\", 2.4\"."
+    },
+    {
+      "id": 6,
+      "nombre": "Rueda Trasera",
+      "categoria": "Rodado",
+      "precio": 18000,
+      "imagen": "../assets/images/productos/rueda-trasera.jpg",
+      "color": "#39d353",
+      "emoji": "⭕",
+      "descripcion": "Aro trasero, soporta más carga. Compatible con cassette o freecoaster."
+    },
+    {
+      "id": 7,
+      "nombre": "Neumáticos (Tires)",
+      "categoria": "Rodado",
+      "precio": 9000,
+      "imagen": "../assets/images/productos/neumaticos.jpg",
+      "color": "#39d353",
+      "emoji": "🔘",
+      "descripcion": "De street, park o dirt. El ancho afecta la tracción y el peso."
+    },
+    {
+      "id": 8,
+      "nombre": "Bujes (Hubs)",
+      "categoria": "Rodado",
+      "precio": 22000,
+      "imagen": "../assets/images/productos/bujes.jpg",
+      "color": "#39d353",
+      "emoji": "⚙️",
+      "descripcion": "Eje de la rueda. Trasero: cassette (freewheel) o freecoaster."
+    },
+    {
+      "id": 9,
+      "nombre": "Pegs",
+      "categoria": "Trucos",
+      "precio": 5500,
+      "imagen": "../assets/images/productos/pegs.jpg",
+      "color": "#ffd700",
+      "emoji": "⚡",
+      "descripcion": "Cilindros de acero o aluminio para grinds. Van en ejes delante y/o atrás."
+    },
+    {
+      "id": 10,
+      "nombre": "Biela (Crank)",
+      "categoria": "Transmisión",
+      "precio": 14000,
+      "imagen": "../assets/images/productos/biela.jpg",
+      "color": "#c084fc",
+      "emoji": "🦵",
+      "descripcion": "Transmite la fuerza del pedaleo. Longitudes: 165mm, 170mm, 175mm."
+    },
+    {
+      "id": 11,
+      "nombre": "Plato (Sprocket)",
+      "categoria": "Transmisión",
+      "precio": 7500,
+      "imagen": "../assets/images/productos/plato.jpg",
+      "color": "#c084fc",
+      "emoji": "⭐",
+      "descripcion": "Engranaje principal unido a la biela. Tamaños de 25T a 44T."
+    },
+    {
+      "id": 12,
+      "nombre": "Cadena (Chain)",
+      "categoria": "Transmisión",
+      "precio": 3500,
+      "imagen": "../assets/images/productos/cadena.jpg",
+      "color": "#c084fc",
+      "emoji": "🔗",
+      "descripcion": "Estándar 1/8\". Conecta el plato con el piñón trasero."
+    },
+    {
+      "id": 13,
+      "nombre": "Piñón (Driver)",
+      "categoria": "Transmisión",
+      "precio": 6000,
+      "imagen": "../assets/images/productos/pinion.jpg",
+      "color": "#c084fc",
+      "emoji": "🔑",
+      "descripcion": "Va en el buje trasero. Tamaños comunes: 9T, 10T, 11T."
+    },
+    {
+      "id": 14,
+      "nombre": "Pedales",
+      "categoria": "Contacto",
+      "precio": 8500,
+      "imagen": "../assets/images/productos/pedales.jpg",
+      "color": "#fb923c",
+      "emoji": "👟",
+      "descripcion": "Plataforma de aluminio o plástico con pines para grip. Sin clip."
+    },
+    {
+      "id": 15,
+      "nombre": "Asiento + Tija sillín",
+      "categoria": "Contacto",
+      "precio": 6500,
+      "imagen": "../assets/images/productos/asiento.jpg",
+      "color": "#fb923c",
+      "emoji": "🪑",
+      "descripcion": "En BMX el asiento es pequeño o removible. La tija lo fija al cuadro."
+    },
+    {
+      "id": 16,
+      "nombre": "Grips",
+      "categoria": "Contacto",
+      "precio": 2500,
+      "imagen": "../assets/images/productos/grips.jpg",
+      "color": "#fb923c",
+      "emoji": "🤲",
+      "descripcion": "Gomas que cubren el manubrio para mejor agarre. Flange o sin flange."
+    },
+    {
+      "id": 17,
+      "nombre": "Freno Trasero",
+      "categoria": "Frenos",
+      "precio": 10500,
+      "imagen": "../assets/images/productos/freno.jpg",
+      "color": "#f87171",
+      "emoji": "🛑",
+      "descripcion": "Muchos riders usan solo freno trasero o ninguno. U-brake o caliper."
+    },
+    {
+      "id": 18,
+      "nombre": "Rotor (Gyro)",
+      "categoria": "Frenos",
+      "precio": 9000,
+      "imagen": "../assets/images/productos/rotor.jpg",
+      "color": "#f87171",
+      "emoji": "🔄",
+      "descripcion": "Permite girar el manubrio 360° sin enredar el cable del freno."
+    },
+    {
+      "id": 19,
+      "nombre": "Headset",
+      "categoria": "Conexión",
+      "precio": 7500,
+      "imagen": "../assets/images/productos/headset.jpg",
+      "color": "#94a3b8",
+      "emoji": "🎯",
+      "descripcion": "Rodamientos que permiten girar el fork suavemente dentro del cuadro."
+    },
+    {
+      "id": 20,
+      "nombre": "Bottom Bracket",
+      "categoria": "Conexión",
+      "precio": 8500,
+      "imagen": "../assets/images/productos/bottom-bracket.jpg",
+      "color": "#94a3b8",
+      "emoji": "⚙️",
+      "descripcion": "Rodamiento central del cuadro donde va el eje de la biela."
+    },
+    {
+      "id": 21,
+      "nombre": "Bar Ends",
+      "categoria": "Conexión",
+      "precio": 4000,
+      "imagen": "../assets/images/productos/bar-ends.jpg",
+      "color": "#94a3b8",
+      "emoji": "🔒",
+      "descripcion": "Tapones de aluminio en los extremos del manubrio. Protección y estética."
+    }
+  ]
+}

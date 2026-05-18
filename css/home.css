@@ -1,0 +1,161 @@
+.hero {
+  border-bottom: 1px solid var(--border);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr;
+  gap: 2.5rem;
+  padding: 3rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  align-items: center;
+}
+.hero-eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  display: block;
+}
+.hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+}
+.hero-subtitle { color: var(--text-muted); margin: 1.5rem 0 2rem; max-width: 28rem; }
+.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-image { aspect-ratio: 1; }
+
+.logo-section {
+  border-bottom: 1px solid var(--border);
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+.logo-box {
+  width: 10rem; height: 10rem;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+}
+.logo-section p {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--text-muted);
+}
+
+.cta-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 5rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.cta-section .image-placeholder { aspect-ratio: 4/5; }
+.cta-text h2 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; }
+.cta-text p { color: var(--text-muted); margin: 1.5rem 0 2rem; }
+
+.recommendations { padding: 5rem 1.5rem; max-width: var(--max-width); margin: 0 auto; }
+.recommendations-header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.recommendations-header span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+}
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.reco-card { display: block; }
+.reco-card .image-placeholder { aspect-ratio: 1; }
+.reco-card h3 {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+.reco-card:hover h3 { color: var(--primary); }
+
+@media (max-width: 768px) {
+  .hero-grid, .cta-section { grid-template-columns: 1fr; }
+  .recommendations-grid { grid-template-columns: 1fr 1fr; }
+}
+
+
+
+
+
+
+
+
+
+
+/* Contenedor Principal en pantalla dividida */
+.hero-text {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* MÁSCARA DEL SLIDER: OBLIGA A MOSTRAR SOLO UNA IMAGEN */
+.slider-container {
+    width: 100% !important;
+    aspect-ratio: 9 / 14 !important;
+    max-height: 680px !important;
+    min-height: 450px !important;
+    overflow: hidden !important;        /* Corta el exceso de imágenes */
+    position: relative !important;
+    display: block !important;
+}
+
+/* Tira vertical que contiene las imágenes */
+.slider-track {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Propiedades de cada imagen individual */
+.slider-track img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;       /* Evita distorsión */
+    display: block !important;
+    flex-shrink: 0 !important;          /* Evita que se colapsen entre sí */
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column !important;
+    }
+    .hero-text {
+        width: 100% !important;
+        height: 50vh !important;
+        padding: 2rem !important;
+    }
+    .slider-container {
+        width: 100% !important;
+        height: 50vh !important;
+    }
+    .slider-track img {
+        height: 50vh !important;
+    }
+}
