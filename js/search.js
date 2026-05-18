@@ -10,21 +10,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Abrir modal de búsqueda
   searchBtn.addEventListener("click", () => {
-    searchModal.style.display = "flex";
+    searchModal.classList.remove("hidden");
     searchInput.focus();
   });
 
   // Cerrar modal de búsqueda
   closeSearchBtn.addEventListener("click", () => {
-    searchModal.style.display = "none";
+    searchModal.classList.add("hidden");
     searchInput.value = "";
     searchResults.innerHTML = "";
   });
 
   // Cerrar al presionar ESC
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && searchModal.style.display !== "none") {
-      searchModal.style.display = "none";
+    if (e.key === "Escape" && !searchModal.classList.contains("hidden")) {
+      searchModal.classList.add("hidden");
       searchInput.value = "";
       searchResults.innerHTML = "";
     }
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Cerrar al hacer click fuera del contenido
   searchModal.addEventListener("click", (e) => {
     if (e.target === searchModal) {
-      searchModal.style.display = "none";
+      searchModal.classList.add("hidden");
       searchInput.value = "";
       searchResults.innerHTML = "";
     }

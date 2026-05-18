@@ -154,6 +154,10 @@
   color: var(--text-muted);
 }
 
+.search-modal.hidden {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .search-modal {
     padding-top: 60px;
